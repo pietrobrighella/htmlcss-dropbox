@@ -16,6 +16,7 @@
     --grey: #D0D0D3;
     --light-blu: #B4D0E7;
     --blue: #0061FF;
+    --blue-hover: #3b7aff;
     --electric-blue: #0000EE;
     --bordeaux: #61082B;
 }
@@ -38,4 +39,111 @@ body {
 
 li {
     list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 12px 16px;
+    border: 0;
+    font-size: var(--font-m);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--blue-hover);
+}
+
+/* header */
+header {
+    width: 100%;
+    background-color: var(--white);
+    margin: 0 auto;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: var(--font-m);
+}
+
+nav div:first-child img {
+    margin-right: 40px;
+}
+
+nav div:first-child li {
+    margin-right: 40px;
+}
+
+nav div:last-child li {
+    margin-left: 40px;
+}
+
+nav div:last-child button {
+    margin-left: 20px;
+}
+
+nav img, nav ul, nav button, nav li {
+    display: inline-block;
+}
+
+/* hero */
+.hero {
+    min-height: 740px;
+    padding-top: 100px;
+    background-color: var(--light-blu);
+    position: relative;
+}
+
+.hero h1 {
+    font-size: var(--font-xxl);
+    padding-bottom: 70px;
+}
+
+.hero p {
+    font-size: var(--font-m);
+}
+
+.hero button {
+    margin: 35px 0;
+}
+
+.hero i {
+    padding-top: 80px;
+    padding-bottom: 25px;
+    font-size: 40px;
+}
+
+.inner-hero {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.inner-hero div {
+    flex-basis: 50%;
+    margin-bottom: -80px;
+}
+
+.inner-hero img {
+    flex-basis: 50%;
+    width: 50vw;
 }
