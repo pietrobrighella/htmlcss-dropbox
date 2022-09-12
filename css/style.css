@@ -11,9 +11,13 @@
     --font-l: 24px;
     --font-xl: 40px;
     --font-xxl: 76px;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-bold: 600;
+    --font-extrabold: 800;
     --white: white;
     --black: #000000;
-    --grey: #D0D0D3;
+    --grey: #a7a7a7;
     --light-blu: #B4D0E7;
     --blue: #0061FF;
     --blue-hover: #3b7aff;
@@ -64,7 +68,7 @@ button:hover {
     background-color: var(--blue-hover);
 }
 
-/* header */
+/* ----- HEADER ----- */
 header {
     width: 100%;
     background-color: var(--white);
@@ -146,4 +150,116 @@ nav img, nav ul, nav button, nav li {
 .inner-hero img {
     flex-basis: 50%;
     width: 50vw;
+}
+
+/* ----- MAIN ----- */
+
+/* section plans - check area */
+main section:nth-child(1) h2 {
+    font-size: var(--font-xl);
+    padding-bottom: 75px;
+}
+
+main section:nth-child(1) {
+    padding-top: 150px;
+    font-size: var(--font-m);
+}
+
+.check-plans {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+main section:nth-child(1) div:first-of-type [type="radio"] {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+
+main section:nth-child(1) div:first-of-type label {
+    margin-right: 50px;
+}
+
+/* section plans - first col */
+.plans {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.col-2 {
+    margin: 0 50px;
+}
+
+.col {
+    border: 1px solid var(--grey);
+    width: calc(100% / 3);
+}
+
+.col div:first-child {
+    border-bottom: 1px solid var(--grey);
+    text-align: center;
+    padding: 10px;
+}
+
+.col div:first-child i {
+    padding-right: 10px;
+    display: inline;
+}
+
+.col div:first-child p {
+    display: inline;
+}
+
+.inner-col {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 35px;
+}
+
+.inner-col h3 {
+    font-size: var(--font-l);
+    padding-bottom: 20px;
+}
+
+.inner-col h4 {
+    font-size: var(--font-s);
+    padding-bottom: 40px;
+}
+
+.inner-col p {
+    font-size: var(--font-s);
+}
+
+.inner-col :nth-child(3) {
+    padding-bottom: 50px;
+}
+
+.inner-col div {
+    padding-bottom: 25px;
+}
+
+.inner-col div i, .inner-col div p {
+    display: inline;
+}
+
+.inner-col i {
+    padding-right: 5px;
+}
+
+.inner-col div .fa-check {
+    color: var(--blue);
+}
+
+.inner-col button {
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.inner-col hr {
+    width: 50px;
+    margin-top: 50px;
+    margin-bottom: 35px;
 }
