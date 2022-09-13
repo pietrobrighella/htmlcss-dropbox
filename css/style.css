@@ -61,8 +61,13 @@ p {
     font-weight: var(--font-regular);
 }
 
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 a:visited {
-    color: var(--electric-blue);
+    color: var(--black);
 }
 
 body {
@@ -120,11 +125,6 @@ header {
     margin: 0 auto;
 }
 
-header li:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 nav {
     height: 80px;
     width: 100%;
@@ -139,6 +139,12 @@ nav {
     z-index: 999;
 }
 
+nav li:hover {
+    border-bottom: 3px solid var(--black);
+    cursor: pointer;
+    margin-bottom: -3px;
+}
+
 nav img:hover {
     cursor: pointer;
 }
@@ -147,6 +153,16 @@ nav div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    height: 100%;
+    line-height: 77px;
 }
 
 nav div:first-child img {
@@ -163,10 +179,6 @@ nav div:last-child li {
 
 nav div:last-child button {
     margin-left: 20px;
-}
-
-nav img, nav ul, nav button, nav li {
-    display: inline-block;
 }
 
 /* hero */
@@ -194,10 +206,6 @@ nav img, nav ul, nav button, nav li {
 .hero i:hover {
     cursor: pointer;
     color: var(--black)
-}
-
-.hero a:visited {
-    color: var(--black);
 }
 
 .inner-hero {
@@ -284,6 +292,11 @@ nav img, nav ul, nav button, nav li {
     padding: 40px 30px;
 }
 
+.inner-col p a {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
 .inner-col h3 {
     padding-bottom: 20px;
 }
@@ -298,7 +311,7 @@ nav img, nav ul, nav button, nav li {
 }
 
 .inner-col ul li {
-    text-indent: -23px;
+    text-indent: -29px;
     padding-bottom: 20px;
 }
 
@@ -307,7 +320,7 @@ nav img, nav ul, nav button, nav li {
 }
 
 .inner-col li i {
-    padding-right: 5px;
+    padding-right: 8px;
 }
 
 .inner-col .fa-check {
@@ -426,6 +439,11 @@ nav img, nav ul, nav button, nav li {
 
 #section-4 p {
     font-size: var(--font-m);
+}
+
+#section-4 a {
+    color: var(--blue);
+    text-decoration: underline;
 }
 
 /* section clients */
@@ -644,4 +662,61 @@ nav img, nav ul, nav button, nav li {
 #section-7 div:hover i {
     transform: rotate(0deg);
     transition: 0.5s;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+footer ul li {
+    font-size: var(--font-m);
+    padding-bottom: 10px;
+}
+
+footer ul li:hover:not(li:first-child) {
+    font-size: var(--font-m);
+    padding-bottom: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer ul li:first-child {
+    font-weight: var(--font-bold);
+    padding-bottom: 25px;
+}
+
+/* language */
+.lang {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+
+.lang:hover p {
+    text-decoration: underline;
+}
+
+footer .hr {
+    border-top: 1px solid var(--white);
+    width: 15%;
+}
+
+.lang p {
+    padding: 0 10px;
+}
+
+.lang .fa-sort-up {
+    margin-bottom: -10px;
+    font-size: 20px;
 }
