@@ -289,12 +289,6 @@ nav img, nav ul, nav button, nav li {
     margin-bottom: 35px;
 }
 
-.inner-col hr {
-    width: 50px;
-    margin-top: 50px;
-    margin-bottom: 35px;
-}
-
 /* section plans - last col */
 .inner-col-3 {
     display: flex;
@@ -427,6 +421,17 @@ nav img, nav ul, nav button, nav li {
 .main-client {
     width: 30%;
     padding: 50px;
+}
+
+.main-client img {
+    width: 50%;
+}
+
+.hr {
+    width: 50px;
+    border-top: 1px solid var(--grey);
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .bloc-01 {
