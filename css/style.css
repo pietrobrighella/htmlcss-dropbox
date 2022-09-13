@@ -458,7 +458,9 @@ nav img, nav ul, nav button, nav li {
 
 .main-client {
     width: 35vw;
+    height: 30vw;
     padding: 40px;
+    overflow: auto;
 }
 
 .main-client img {
@@ -470,10 +472,6 @@ nav img, nav ul, nav button, nav li {
     border-top: 1px solid var(--grey);
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.ovfw-scroll {
-    overflow: auto;
 }
 
 .bloc-01 {
